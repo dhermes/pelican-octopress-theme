@@ -19,12 +19,14 @@
                             <span class="day">{{ article.date.strftime('%d') }}</span>
                             <span class="year">{{ article.date.strftime('%Y') }}</span>
                         </time>
+                        {% if not HIDE_CATEGORIES_IN_ARCHIVE %}
                         <footer>
                             <span class="categories">posted in
                                 <a class='category' href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a>
                                 {{ tag }}
                             </span>
                         </footer>
+                        {% endif %}
                     </article>
                 {% endfor %}
             {% endfor %}
