@@ -12,7 +12,9 @@
 </ul>
 
 
-{% if SEARCH_BOX %}
+{% if CUSTOM_SEARCH %}
+{{ CUSTOM_SEARCH }}
+{% elif SEARCH_BOX %}
 <form action="{{ SITESEARCH|default('//google.com/search') }}" method="get">
   <fieldset role="search">
     {% if 'duckduckgo.com' in SITESEARCH|lower %}
