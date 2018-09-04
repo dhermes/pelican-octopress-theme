@@ -2,16 +2,16 @@
 {% block title %}Tags &mdash; {{ SITENAME }}{% endblock %}
 {% block content %}
 <div>
-	<article role="article">
-    	<header>
-    		<h1 class="entry-title">Blog Tags</h1>
-    	</header>
+    <article role="article">
+        <header>
+            <h1 class="entry-title">Blog Tags</h1>
+        </header>
 
-	<p>
-	{% for tag, articles in tags|sort %}
-		<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a> ({{ articles|count }})<br>
-	{% endfor %}
-	</p>
-	</article>
+    <p>
+    {% for tag, articles in tags|sort %}
+        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a> ({{ articles|count }})<br>
+    {% endfor %}
+    </p>
+    </article>
 </div>
 {% endblock %}
