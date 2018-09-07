@@ -7,8 +7,8 @@
     {% else %}
       <h1 class="entry-title">{{ article.title|striptags }}</h1>
     {% endif %}
-    {% if ARTICLE_GITHUB_REPO and article.github_slug %}
-      <a href="{{ ARTICLE_GITHUB_REPO }}/blob/master/{{ article.github_slug }}" class="fab fa-github"> Edit on GitHub</a>
+    {% if CUSTOM_HEADER_TEMPLATE %}
+      {{ CUSTOM_HEADER_TEMPLATE.render({"article": article}) }}
     {% endif %}
     <p class="meta">
       {% include '_includes/article_time.html' %}
