@@ -84,7 +84,7 @@ Sidebar Settings
 
 - ``HIDE_TAGS_IN_SIDEBAR``: set to true to disable tag display in the sidebar
 - ``HIDE_CATEGORIES_IN_SIDEBAR``: set to true to disable category display in
-                                  the sidebar
+  the sidebar
 
 QR Code generation
 -------------
@@ -159,12 +159,11 @@ the following metadata to each post:
 - ``title``: The title of the post. This is expected for any post.
 - ``description``: A long form description of the post.
 - ``social_image``: A path to an image, relative to ``SITEURL``. This image
-                    will show up next to the other information in social
-                    shares.
+  will show up next to the other information in social shares.
 - ``twitter_site``: A Twitter handle, e.g. ``@getpelican`` for the owner
-                    of the site.
+  of the site.
 - ``twitter_creator``: A Twitter handle, e.g. ``@getpelican`` for the author
-                       of the post.
+  of the post.
 
 In addition, you can provide a default post image (instead of setting
 ``social_image`` in the post metadata), by setting ``SOCIAL_IMAGE`` in your
