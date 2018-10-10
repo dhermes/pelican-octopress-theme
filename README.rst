@@ -163,7 +163,7 @@ the following metadata to each post:
                     shares.
 - ``twitter_site``: A Twitter handle, e.g. ``@getpelican`` for the owner
                     of the site.
-` ``twitter_creator``: A Twitter handle, e.g. ``@getpelican`` for the author
+- ``twitter_creator``: A Twitter handle, e.g. ``@getpelican`` for the author
                        of the post.
 
 In addition, you can provide a default post image (instead of setting
